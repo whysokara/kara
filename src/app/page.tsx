@@ -1,5 +1,5 @@
 import { Hero } from '@/components/Hero'
-import { Projects } from '@/components/Projects'
+// import { Projects } from '@/components/Projects'
 import { Blog } from '@/components/Blog'
 
 export default async function Home() {

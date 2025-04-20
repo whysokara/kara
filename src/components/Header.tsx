@@ -21,7 +21,7 @@ export function Header() {
           <div className="col-span-10 flex h-[42px] items-center justify-between px-4 md:px-0">
             {/* Left side: Name */}
             <Link href="/" className="text-sm text-gray-900">
-              Yash Bhardwaj
+              kara
             </Link>
 
             {/* Right side: Navigation, Weather, and Menu */}
@@ -31,12 +31,12 @@ export function Header() {
                 <Link href="/writing" className="text-sm text-gray-500 hover:text-gray-900">
                   writing
                 </Link>
-                <Link href="/projects" className="text-sm text-gray-500 hover:text-gray-900">
+                {/* <Link href="/projects" className="text-sm text-gray-500 hover:text-gray-900">
                   projects
                 </Link>
                 <Link href="/api" className="text-sm text-gray-500 hover:text-gray-900">
                   api
-                </Link>
+                </Link> */}
               </nav>
 
               {/* Divider - Only on desktop */}
@@ -78,7 +78,7 @@ export function Header() {
                 >
                   writing
                 </Link>
-                <Link 
+                {/* <Link 
                   href="/projects" 
                   className="text-sm text-gray-500 hover:text-gray-900"
                   onClick={() => setMobileMenuOpen(false)}
@@ -91,7 +91,7 @@ export function Header() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   api
-                </Link>
+                </Link> */}
               </nav>
               <div className="hidden md:block md:col-span-1" />
             </div>

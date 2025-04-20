@@ -4,16 +4,16 @@ import { getAllPosts } from '@/lib/mdx'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Writing | Yash Bhardwaj',
+  title: 'Writing | kara',
   description: 'Thoughts on technology, business, and life',
   openGraph: {
-    title: 'Writing | Yash Bhardwaj',
+    title: 'Writing | kara',
     description: 'Thoughts on technology, business, and life',
     images: ['/api/og'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Writing | Yash Bhardwaj',
+    title: 'Writing | kara',
     description: 'Thoughts on technology, business, and life',
     images: ['/api/og'],
   },

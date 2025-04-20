@@ -15,7 +15,7 @@ export async function generateMetadata({
   
   if (!post) {
     return {
-      title: 'Post Not Found | Yash Bhardwaj',
+      title: 'Post Not Found | kara',
       description: 'The requested post could not be found.',
     }
   }
@@ -23,7 +23,7 @@ export async function generateMetadata({
   const ogUrl = `/api/og?slug=${params.slug}&title=${encodeURIComponent(post.title)}&category=${encodeURIComponent(post.category)}&date=${encodeURIComponent(post.date)}`
 
   return {
-    title: `${post.title} | Yash Bhardwaj`,
+    title: `${post.title} | kara`,
     description: post.description || post.title,
     openGraph: {
       type: 'article',
@@ -38,15 +38,15 @@ export async function generateMetadata({
           alt: post.title,
         }
       ],
-      siteName: 'Yash Bhardwaj',
+      siteName: 'kara',
       publishedTime: post.date,
-      authors: ['Yash Bhardwaj'],
+      authors: ['kara'],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description || post.title,
-      creator: '@ybhrdwj',
+      creator: '@whysokara',
       images: [
         {
           url: ogUrl,
@@ -106,16 +106,16 @@ export default async function Post({
             <div className="flex items-center gap-3">
               <Image
                 src="/logos/yb.jpg"
-                alt="Yash Bhardwaj"
+                alt="kara"
                 width={24}
                 height={24}
                 className="rounded-full"
               />
-              <span className="text-sm text-gray-600">by Yash Bhardwaj</span>
+              <span className="text-sm text-gray-600">by kara</span>
             </div>
             <a 
               href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                `Just finished reading — ${post.title} by @ybhrdwj\n\nhttps://yashbhardwaj.com/writing/${params.slug}`
+                `Just finished reading — ${post.title} by @whysokara\n\nhttps://yashbhardwaj.com/writing/${params.slug}`
               )}`}
               target="_blank"
               rel="noopener noreferrer"

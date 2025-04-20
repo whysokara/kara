@@ -34,7 +34,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       slug: realSlug,
       title: data.title,
       date: data.date,
-      category: data.category || 'Uncategorized', // Default category if not specified
+      // category: data.category || 'Uncategorized', // Default category if not specified
       description: data.description || data.title, // Use description from frontmatter or fallback to title
       content: await MDXRemote({
         source: content,

@@ -12,7 +12,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Yash Bhardwaj",
+  title: "kara",
   description: "Building fun things on the internet",
   metadataBase: new URL('https://yashbhardwaj.com'),
   icons: {
@@ -25,17 +25,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://yashbhardwaj.com',
-    title: "Yash Bhardwaj",
+    title: "kara",
     description: "Building fun things on the internet",
-    siteName: 'Yash Bhardwaj',
+    siteName: 'kara',
     images: ["https://yashbhardwaj.com/og-image.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yash Bhardwaj",
+    title: "kara",
     description: "Building fun things on the internet",
     images: ["https://yashbhardwaj.com/og-image.png"],
-    creator: '@ybhrdwj',
+    creator: '@whysokara',
   },
   viewport: {
     width: 'device-width',

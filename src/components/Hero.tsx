@@ -10,7 +10,7 @@ export function Hero() {
 
   const handleEmailClick = (e: React.MouseEvent) => {
     e.preventDefault()
-    navigator.clipboard.writeText('yb@yashbhardwaj.com')
+    navigator.clipboard.writeText('kara_himanshu@yahoo.com')
     setShowCopied(true)
     setTimeout(() => setShowCopied(false), 2000)
   }
@@ -27,20 +27,24 @@ export function Hero() {
           {/* Welcome paragraph - 75% width */}
           <div className="w-3/4">
             <p className="text-base text-gray-600">
-              Hello! I&apos;m Yash and you&apos;re currently exploring my tiny 
-              corner of the internet. I use this space to project my ideas 
-              and express my obsessions.
+            {/* Hi! I&apos;m Kara, and for over 5.5 years, I&apos;ve been working with data, <br/>
+          using BI tools, SQL, and Python to build things that make sense. <br/> <br/>
+          Welcome to my corner of the web! */}
+          Hello! I&apos;m Kara, a data enthusiast with 5.5+ years of experience using BI, SQL, and Python. <br/>
+          I love building things that make data meaningful—and occasionally, I explore other creative outlets. <br/> <br/>
+          You&apos;ll find a bit of that here too.
             </p>
           </div>
           
           {/* Image - 25% width */}
           <div className="w-1/4 aspect-square relative">
             <Image
-              src="/yb-hero.jpg"
-              alt="Yash Bhardwaj"
+              src="/k-hero.jpg"
+              alt="kara"
               fill
               className="rounded-lg object-cover"
               priority
+              // height={600}
             />
           </div>
         </div>
@@ -51,51 +55,57 @@ export function Hero() {
           <div className="space-y-4">
             <h2 className="text-sm font-medium uppercase text-gray-400">Summary</h2>
             <ul className="list-disc space-y-2 pl-4 text-gray-600 [&>li::marker]:text-gray-300">
-              <li>
-                Currently I&apos;m moving rectangles at{' '}
-                <LinkText
-                  variant="single-image-link"
-                  text="Solana"
-                  href="https://solana.com"
-                  images={{ src: "/logos/solana.png", alt: "Solana" }}
-                  withBorder
-                />
-              </li>
-              <li>
-                Previously I was designing for{' '}
-                <LinkText
-                  variant="single-image-link"
-                  text="Balaji"
-                  href="https://x.com/balajis"
-                  images={{ src: "/logos/balaji.png", alt: "Balaji" }}
-                  withBorder
-                />
-                {' '}&{' '}
-                <LinkText
+            <li>
+            Currently I turn chaos into insights at{' '}
+              <LinkText
+                variant="single-image-link"
+                text="KPMG"
+                href="https://kpmg.com/in/en.html"
+                images={{ src: "/logos/kpmg.jpeg", alt: "KPMG" }}
+                withBorder
+              />
+            </li>
+            <li>
+            Previously did BI + SQL at {' '}
+              <LinkText
+                variant="single-image-link"
+                text="Capgemini"
+                href="https://www.capgemini.com/in-en/"
+                images={{ src: "/logos/capgemini.png", alt: "Capgemini" }}
+                withBorder
+              />
+              
+                {/* <LinkText
                   variant="single-image-link"
                   text="Network State"
                   href="https://ns.com"
                   images={{ src: "/logos/ns.png", alt: "Network State" }}
                   withBorder
-                />
+                /> */}
               </li>
-              <li>
-                I&apos;ve worked for 220 companies since 2016{' '}
+              {/* <li>
+              Got my hands on some robotic tech at {' '} 
                 <LinkText
                   variant="image-stack"
-                  text=""
-                  images={[
-                    { src: "/logos/gates.png", alt: "Gates Foundation" },
-                    { src: "/logos/userpilot.png", alt: "Userpilot" },
-                    { src: "/logos/asy.png", alt: "Asymmetric" },
-                    { src: "/logos/cointelegraph.png", alt: "CoinTelegraph" },
-                    { src: "/logos/synthesis.png", alt: "Synthesis" },
-                    { src: "/logos/alpaca.png", alt: "Alpaca" },
-                  ]}
+                  text="DRDO"
+                  href="https://ns.com"
+                  images={{ src: "/logos/ns.png", alt: "Network State" }}
+                 
                 />
-              </li>
-              <li>25 years old, based in Bombay</li>
+              </li> */}
+
               <li>
+                Got my hands on some robotic tech at{' '}
+              <LinkText
+                variant="single-image-link"
+                text="DRDO"
+                href="https://www.drdo.gov.in/drdo/labs-and-establishments/centre-artificial-intelligence-robotics-cair"
+                images={{ src: "/logos/drdo.jpeg", alt: "DRDO" }}
+                withBorder
+              />
+            </li>
+              <li>27, based in Bengaluru</li>
+              {/* <li>
                 I built the first meme page network in India to 16M followers{' '}
                 <LinkText
                   variant="image-stack"
@@ -114,7 +124,7 @@ export function Hero() {
                   images={{ src: "/logos/producthacks.png", alt: "Product Hacks" }}
                   withBorder
                 />
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -122,7 +132,7 @@ export function Hero() {
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-4 w-full">
               <a 
-                href="mailto:yb@yashbhardwaj.com" 
+                href="mailto:kara_himanshu@yahoo.com" 
                 onClick={handleEmailClick}
                 className="group relative text-gray-400 hover:text-gray-600"
               >
@@ -134,7 +144,7 @@ export function Hero() {
                 )}
               </a>
               <a 
-                href="https://x.com/ybhrdwj" 
+                href="https://x.com/whysokara" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-600"
@@ -148,7 +158,7 @@ export function Hero() {
                 />
               </a>
               <a 
-                href="https://instagram.com/ybhrdwj" 
+                href="https://instagram.com/whysokara" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-600"
@@ -156,7 +166,7 @@ export function Hero() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
-                href="https://github.com/ybhrdwj" 
+                href="https://github.com/whysokara" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-600"
@@ -201,9 +211,10 @@ export function Hero() {
       <div className="hidden md:block md:col-span-7 space-y-12">
         {/* Welcome paragraph */}
         <p className="text-base text-gray-600">
-          Hello! I&apos;m Yash and you&apos;re currently exploring my tiny <br />
-          corner of the internet. I use this space to project my ideas <br />
-          and express my obsessions.
+        Hello! I&apos;m Kara, a data enthusiast with 5.5+ years of experience using BI, SQL,
+         and Python. 
+          I love building things that make data meaningful .. and <br/> <br/>occasionally, I explore other creative outlets. 
+         You&apos;ll find a bit of that here too.
         </p>
 
         {/* Summary section */}
@@ -211,34 +222,34 @@ export function Hero() {
           <h2 className="text-sm font-medium uppercase text-gray-400">Summary</h2>
           <ul className="list-disc space-y-2 pl-4 text-gray-600 [&>li::marker]:text-gray-300">
             <li>
-              Currently I&apos;m moving rectangles at{' '}
+              Currently I turn chaos into insights at {' '}
               <LinkText
                 variant="single-image-link"
-                text="Solana"
-                href="https://solana.com"
-                images={{ src: "/logos/solana.png", alt: "Solana" }}
+                text="KPMG"
+                href="https://kpmg.com/in/en.html"
+                images={{ src: "/logos/kpmg.jpeg", alt: "KPMG" }}
                 withBorder
               />
             </li>
             <li>
-              Previously I was designing for{' '}
+            Previously did BI + SQL at {' '}
               <LinkText
                 variant="single-image-link"
-                text="Balaji"
-                href="https://x.com/balajis"
-                images={{ src: "/logos/balaji.png", alt: "Balaji" }}
+                text="Capgemini"
+                href="https://www.capgemini.com/in-en/"
+                images={{ src: "/logos/capgemini.png", alt: "Capgemini" }}
                 withBorder
               />
-              {' '}&{' '}
+              {/* {' '}&{' '}
               <LinkText
                 variant="single-image-link"
                 text="Network State"
                 href="https://ns.com"
                 images={{ src: "/logos/ns.png", alt: "Network State" }}
                 withBorder
-              />
+              /> */}
             </li>
-            <li>
+            {/* <li>
               I&apos;ve worked for 220 companies since 2016{' '}
               <LinkText
                 variant="image-stack"
@@ -252,9 +263,23 @@ export function Hero() {
                   { src: "/logos/alpaca.png", alt: "Alpaca" },
                 ]}
               />
-            </li>
-            <li>25 years old, based in Bombay</li>
+            </li> */}
             <li>
+                Got my hands on some robotic tech at{' '}
+              <LinkText
+                variant="single-image-link"
+                text="DRDO"
+                href="https://www.drdo.gov.in/drdo/labs-and-establishments/centre-artificial-intelligence-robotics-cair"
+                images={{ src: "/logos/drdo.jpeg", alt: "DRDO" }}
+                withBorder
+              />
+            </li>
+            
+
+
+
+            <li>27, based in Bengaluru</li>
+            {/* <li>
               I built the first meme page network in India to 16M followers{' '}
               <LinkText
                 variant="image-stack"
@@ -263,9 +288,9 @@ export function Hero() {
                   { src: "/logos/im.png", alt: "Indian Memes" }
                 ]}
               />
-            </li>
-            <li>
-              I write a pretty smart newsletter called{' '}
+            </li> */}
+            {/* <li>
+              I write a pretty smart newsletter {' '}
               <LinkText
                 variant="single-image-link"
                 text="Product Hacks"
@@ -273,7 +298,7 @@ export function Hero() {
                 images={{ src: "/logos/producthacks.png", alt: "Product Hacks" }}
                 withBorder
               />
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -281,7 +306,7 @@ export function Hero() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-4">
             <a 
-              href="mailto:yb@yashbhardwaj.com" 
+              href="mailto:kara_himanshu@yahoo.com" 
               onClick={handleEmailClick}
               className="group relative text-gray-400 hover:text-gray-600"
             >
@@ -293,7 +318,7 @@ export function Hero() {
               )}
             </a>
             <a 
-              href="https://x.com/ybhrdwj" 
+              href="https://x.com/whysokara" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-600"
@@ -307,7 +332,7 @@ export function Hero() {
               />
             </a>
             <a 
-              href="https://instagram.com/ybhrdwj" 
+              href="https://instagram.com/whysokara" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-600"
@@ -315,7 +340,7 @@ export function Hero() {
               <Instagram className="h-5 w-5" />
             </a>
             <a 
-              href="https://github.com/ybhrdwj" 
+              href="https://github.com/whysokara" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-600"
@@ -355,10 +380,10 @@ export function Hero() {
       {/* Desktop Image - 3 columns */}
       <div className="hidden md:block md:col-span-3">
         <Image
-          src="/yb-hero.jpg"
-          alt="Yash Bhardwaj"
+          src="/k-hero.jpg"
+          alt="kara"
           width={400}
-          height={400}
+          height={1200}
           className="rounded-lg"
           priority
         />

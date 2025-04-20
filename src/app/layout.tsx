@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "kara",
   description: "Building fun things on the internet",
-  metadataBase: new URL('https://yashbhardwaj.com'),
+  metadataBase: new URL('https://kara-kappa.vercel.app'),
   icons: {
     icon: '/favicon.ico?v=1',
     apple: '/apple-touch-icon.png?v=1',
@@ -24,17 +24,17 @@ export const metadata: Metadata = {
   themeColor: '#000000',
   openGraph: {
     type: 'website',
-    url: 'https://yashbhardwaj.com',
+    url: 'https://kara-kappa.vercel.app',
     title: "kara",
     description: "Building fun things on the internet",
     siteName: 'kara',
-    images: ["https://yashbhardwaj.com/og-image.png"],
+    images: ["https://kara-kappa.vercel.app/og-image.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "kara",
     description: "Building fun things on the internet",
-    images: ["https://yashbhardwaj.com/og-image.png"],
+    images: ["https://kara-kappa.vercel.app/og-image.png"],
     creator: '@whysokara',
   },
   viewport: {

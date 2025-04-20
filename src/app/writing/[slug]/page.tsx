@@ -29,7 +29,7 @@ export async function generateMetadata({
       type: 'article',
       title: post.title,
       description: post.description || post.title,
-      url: `https://yashbhardwaj.com/writing/${params.slug}`,
+      url: `https://kara-kappa.vercel.app/writing/${params.slug}`,
       images: [
         {
           url: ogUrl,
@@ -115,7 +115,7 @@ export default async function Post({
             </div>
             <a 
               href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                `Just finished reading — ${post.title} by @whysokara\n\nhttps://yashbhardwaj.com/writing/${params.slug}`
+                `Just finished reading — ${post.title} by @whysokara\n\nhttps://kara-kappa.vercel.app/writing/${params.slug}`
               )}`}
               target="_blank"
               rel="noopener noreferrer"

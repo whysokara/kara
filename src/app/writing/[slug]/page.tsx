@@ -105,7 +105,7 @@ export default async function Post({
           <div className="mb-8 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <Image
-                src="/logos/yb.jpg"
+                src="/logos/k.jpg"
                 alt="kara"
                 width={24}
                 height={24}

@@ -63,7 +63,7 @@ export async function GET(request: NextRequest) {
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`${baseUrl}/logos/yb.jpg`}
+                  src={`${baseUrl}/logos/k.jpg`}
                   alt="kara"
                   width={48}
                   height={48}
@@ -154,7 +154,7 @@ export async function GET(request: NextRequest) {
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`${baseUrl}/logos/yb.jpg`}
+                src={`${baseUrl}/logos/k.jpg`}
                 alt="kara"
                 width={48}
                 height={48}

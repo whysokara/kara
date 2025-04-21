@@ -1,5 +1,5 @@
 import { Hero } from '@/components/Hero'
-// import { Projects } from '@/components/Projects'
+import { Projects } from '@/components/Projects'
 import { Blog } from '@/components/Blog'
 
 export default async function Home() {
@@ -11,7 +11,7 @@ export default async function Home() {
       <div className="mx-auto w-full max-w-[1084px] px-4 md:px-0">
         {/* Mobile layout - stacked */}
         <div className="flex flex-col gap-12 md:hidden">
-          {/* <Projects /> */}
+          <Projects />
           <Blog />
         </div>
         
@@ -21,7 +21,7 @@ export default async function Home() {
           
           {/* Projects - 7 columns */}
           <div className="col-span-7">
-            {/* <Projects /> */}
+            <Projects />
           </div>
 
           {/* Blog section - 3 columns but shifted more left */}
